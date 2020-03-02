@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: rgb(23, 23, 34);
+  font-family: "Poppins";
+}
+
+nav {
+  height: 10vh;
+
+  ul {
+    margin-right: 0;
+    float: right;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    li {
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 10px 15px;
+      border: 1px solid #eee;
+      color: #eee;
+      transition: 0.5s ease;
+      margin: 0;
+
+      &:hover {
+        background: #eee;
+        color: #333;
+        border: 1px solid #333;
+      }
+    }
+  }
+}
