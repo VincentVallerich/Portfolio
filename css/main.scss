@@ -1,38 +1,48 @@
+@import "./layout/_navigation";
+@import "./utils/_variables";
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  background: rgb(23, 23, 34);
+  background: $bg-color;
   font-family: "Poppins";
+  overflow: hidden;
+  transition: 0.5s linear;
 }
 
-nav {
-  height: 10vh;
 
-  ul {
-    margin-right: 0;
-    float: right;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
-    li {
-      list-style: none;
-      text-transform: uppercase;
-      font-size: 14px;
-      padding: 10px 15px;
-      border: 1px solid #eee;
-      color: #eee;
-      transition: 0.5s ease;
-      margin: 0;
 
-      &:hover {
-        background: #eee;
-        color: #333;
-        border: 1px solid #333;
-      }
-    }
+
+
+/*
+section {
+  position: fixed;
+  top: 10vh;
+  height: 70vh;
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+*/
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  border: 1px solid #444;
+  color: #444;
+  background: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(190, 196, 106);
   }
 }
