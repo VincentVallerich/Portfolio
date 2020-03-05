@@ -5,11 +5,11 @@ let toggle = 1;
 switchButton.addEventListener("click", function() {
   if (toggle) {
     document.body.style.backgroundColor = "#2c3e50";
-    toggle++;
+    toggle--;
     console.log("dark");
   } else {
     document.body.style.backgroundColor = "#eee";
-    toggle--;
+    toggle++;
     console.log("white");
   }
 });
