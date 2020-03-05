@@ -1,3 +1,47 @@
+.switch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: translate(-50%, -50%);
+  transition: translate(-50%, -50%);
+}
+
+.switch__circle {
+  pointer-events: none;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background: #ddd;
+  border-radius: 50%;
+  -webkit-transform: translate(5px, -28px);
+          transform: translate(5px, -28px);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.switch label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border: 2px solid #eee;
+  border-radius: 15px;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch input:checked ~ .switch__circle {
+  position: relative;
+  -webkit-transform: translate(30px, -28px);
+          transform: translate(30px, -28px);
+}
+
+.switch input:checked + label {
+  background: #7f8c8d;
+}
+
 nav {
   height: 10vh;
 }
@@ -67,18 +111,6 @@ body {
   transition: 0.5s linear;
 }
 
-/*
-section {
-  position: fixed;
-  top: 10vh;
-  height: 70vh;
-  background: url("../images/bg.jpg");
-  background-size: cover;
-  width: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-*/
 button {
   position: absolute;
   top: 50%;
